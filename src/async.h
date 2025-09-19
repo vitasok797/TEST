@@ -7,7 +7,7 @@
 namespace vsl
 {
 
-template<typename F, typename... Params>/
+template<typename F, typename... Params>//
 auto run_async(F&& f, Params&&... params)
 //
 {
