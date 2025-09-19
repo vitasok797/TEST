@@ -9,6 +9,7 @@ namespace vsl
 
 template<typename F, typename... Params>/
 auto run_async(F&& f, Params&&... params)
+//
 {
     return std::async(std::launch::async, std::forward<F>(f), std::forward<Params>(params)...);
 }
