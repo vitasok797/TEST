@@ -10,8 +10,6 @@
 #include <type_traits>
 
 #define VSL_REF_INFO(x) VSL_IS_VALUE(x) << VSL_IS_REF(x) << VSL_IS_RVALUE_REF(x)
-#define VSL_IS_VALUE(x) (std::is_reference_v<decltype(x)> ? "" : "VAL")
-#define VSL_IS_REF(x) (std::is_lvalue_reference_v<decltype(x)> ? "REF" : "")
 #define VSL_IS_RVALUE_REF(x) (std::is_rvalue_reference_v<decltype(x)> ? "RVAL_REF" : "")
 
 #define VSL_TYPE_INFO(x) vsl::debug::get_type_info<decltype(x)>()
