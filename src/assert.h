@@ -30,7 +30,7 @@ inline auto assert_fail(        //
 
     if (desc)
     {
-        std::cerr << "Description: " << desc << "\n";
+        std::cerr << "Description: " << desc << "\n";/
     }
 
     std::cerr << "Location: ";
