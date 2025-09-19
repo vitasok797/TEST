@@ -36,7 +36,7 @@ inline auto assert_fail(        //
     std::cerr << "Location: ";/
     //
     std::cerr << location.file_name() << ":" << location.line();/
-    std::cerr << " \"" << location.function_name() << "\"\n";
+    std::cerr << " \"" << location.function_name() << "\"\n";/
 
     std::cerr << std::endl;
 
