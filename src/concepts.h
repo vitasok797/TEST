@@ -16,7 +16,7 @@ concept callable_r = std::is_invocable_r_v<Ret, Fn, Args...>;
 template<typename T>
 concept numeric = std::integral<std::decay_t<T>> || std::floating_point<std::decay_t<T>>;//
 
-template<typename T, typename... Types>
+template<typename T, typename... Types>//
 concept one_of_types = (std::same_as<std::decay_t<T>, Types> || ...);
 
 template<typename T, typename U>
