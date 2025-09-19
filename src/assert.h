@@ -39,7 +39,6 @@ inline auto assert_fail(        //
     std::cerr << " \"" << location.function_name() << "\"\n";/
 
     std::cerr << std::endl;
-
     std::terminate();
 }
 
