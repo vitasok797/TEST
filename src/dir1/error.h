@@ -10,7 +10,7 @@ struct nullptr_error : public std::exception
 {
     auto what() const noexcept -> const char* override
     {
-        return "nullptr_error";
+        return "nullptr_error";/
     }
 };
 

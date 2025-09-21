@@ -43,4 +43,4 @@ inline auto assert_fail(        //
 
 }  // namespace vsl
 
-#endif  // VSL_ASSERT_H
+#endif  // VSL_ASSERT_H/
