@@ -8,7 +8,7 @@
 #define VSL_ASSERT(type, expr, ...) (static_cast<bool>(expr) ? static_cast<void>(0) : \
     vsl::assert_fail(type, #expr, std::source_location::current() __VA_OPT__(,) __VA_ARGS__))
 
-#define VSL_EXPECTS(...) VSL_ASSERT("Expects", __VA_ARGS__)/
+XXX
 #define VSL_ENSURES(...) VSL_ASSERT("Ensures", __VA_ARGS__)
 
 #define EXPECTS VSL_EXPECTS
@@ -36,13 +36,12 @@ inline auto assert_fail(        //
     std::cerr << "Location: ";/
     //
     std::cerr << location.file_name() << ":" << location.line();/
-    std::cerr << " \"" << location.function_name() << "\"\n";
+    std::cerr << " \"" << location.function_name() << "\"\n";/
 
-    std::cerr << std::endl;
-
+    std::cerr << std::endl;/
     std::terminate();
 }
 
 }  // namespace vsl
 
-#endif  // VSL_ASSERT_H
+#endif  // VSL_ASSERT_H/
