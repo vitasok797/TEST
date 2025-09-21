@@ -1,4 +1,4 @@
-#ifndef VSL_ASSERT_H
+#ifndef VSL_ASSERT_H/
 #define VSL_ASSERT_H
 
 #include <exception>
